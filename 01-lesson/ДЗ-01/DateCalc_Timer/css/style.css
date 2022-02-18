@@ -1,0 +1,48 @@
+#wrapper {
+    width: 100%;
+}
+.description {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+.sep {
+    margin: 0 1em;
+}
+.item-block {
+    max-width: 50%;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #000000;
+    border-radius: 0.5em;
+}
+.items .giftframe {
+    display:none;
+}
+.calc .items .calc,
+.timer .items .timer {
+    display: block;
+}
+.date-calc,
+.date-timer {
+    max-width: 88%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.result {
+    margin: 1em 0;
+}
+.datecalc__result,
+.timer__result {
+    display: inline-block;
+    margin-left: 2em;
+}
+input[type=number]{
+    width: 5.2em;
+}
+button[name=start],
+button[name=stop],
+button[name=reload] {
+    margin-left: 1.5em;
+}
