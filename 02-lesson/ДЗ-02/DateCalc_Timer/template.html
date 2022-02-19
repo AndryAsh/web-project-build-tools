@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Тест переключателя</title>
+</head>
+
+<body>
+    <div id="wrapper" class="jsw calc">
+        <div class="description">
+            <a href="template.html" class="jss calc_l" data-rel="calc">Калькулятор</a>
+            <span class="sep">|</span>
+            <a href="template.html" class="jss timer_l" data-rel="timer">Таймер</a>
+        </div>
+        <div class="items">
+            <div class="giftframe calc item-block">
+                <form id="date-calc" class="date-calc">
+                    <h3>Калькулятор дат</h3>
+                    <label>
+                        <strong>Первая дата:</strong>
+                        <input type="date" name="firstDate" />
+                    </label>
+                    <label>
+                        <strong>Вторая дата:</strong>
+                        <input type="date" name="secondDate" />
+                    </label>
+                    <button type="submit">Расчитать промежуток</button>
+                    <div class="result">
+                        <strong>Результат:</strong>
+                        <span id="datecalc__result" class="datecalc__result"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="giftframe timer item-block">
+                <form id="date-timer" class="date-timer">
+                    <h3>Таймер</h3>
+                    <label>
+                        <strong>Часы:</strong>
+                        <input type="number" name="hoursDate" />
+                    </label>
+                    <label>
+                        <strong>Минуты:</strong>
+                        <input type="number" name="minutesDate" />
+                    </label>
+                    <label>
+                        <strong>Секунды:</strong>
+                        <input type="number" name="secondsDate" />
+                    </label>
+                    <button type="submit" name="start">Старт</button>
+                    <button type="submit" name="stop" disabled>Стоп</button>
+                    <button type="submit" name="reload" disabled>Сброс</button>
+                    <div class="result">
+                        <strong>Результат:</strong>
+                        <span id="timer__result" class="timer__result"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
